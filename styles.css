@@ -240,11 +240,15 @@ h2 {
 .project-cards {
     display: grid;
     gap: 1.5rem;
-    grid-template-columns: repeat(auto-fill, minmax(15rem, 1fr ));
+    grid-template-columns: repeat(auto-fill, minmax(16.25rem, 1fr ));
 }
 
 .card-project {
     border-left: 10px solid var(--clr-card);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 1em;
 }
 
 .card-heading{
@@ -254,19 +258,26 @@ h2 {
 
 .card-project-body {
     color: var(--clor-body);
-    font-size: 1rem;
-    line-height: 1.35rem;
+    font-size: 0.8rem;
+    line-height: 1.25rem;
+    /* add ellipsis for overflow text */
+    text-overflow:ellipsis;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
 }
 
 .card-icons {
     display: flex;
     justify-content: flex-end;
     gap: 1rem;
-    margin-top: 2rem;
 }
 
 .card-icons svg {
     width: 1.5rem;
+    height: fit-content;
+    
 }
 
 .card-announcement {
@@ -298,4 +309,5 @@ h2 {
     display: flex;
     flex-direction: column;
     gap: 3rem;
+    /* justify-content: space-between; */
 }

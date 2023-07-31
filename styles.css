@@ -269,3 +269,33 @@ h2 {
     width: 1.5rem;
 }
 
+.card-announcement {
+    font-size: 0.8rem;
+    line-height: 1.125rem;
+}
+
+/* add bottom border to the middle announcments, padding to top and bottom ...  */
+.announcement-group:not(:first-child) {
+    padding-top: 1rem;
+}
+
+.announcement-group:not(:last-child)  {
+    border-bottom: 1px solid var(--clor-body);
+    padding-bottom: 1rem;
+}
+
+
+.announement-title {
+    font-weight: var(--fw-bold);
+
+}
+
+.announcement-body {
+    color: var(--clor-body);
+}
+
+.side-cards {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}

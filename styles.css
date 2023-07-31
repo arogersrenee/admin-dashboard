@@ -224,7 +224,7 @@ main {
     display: grid;
     grid-template-columns: 1fr 15rem;
     gap: 1rem;
-    box-shadow: inset 0 0 0 15 #334155;
+    box-shadow: inset 0px 10px 10px -10px rgba(0, 0, 0, 0.2);
 }
 
 h2 {
@@ -246,7 +246,7 @@ h2 {
 }
 
 .card-project {
-    border-left: 10px solid var(--clr-card);
+    border-left: 8px solid var(--clr-card);
     display: flex;
     flex-direction: column;
     justify-content: space-between;

@@ -74,7 +74,9 @@ body {
 .container {
     display: grid;
     grid-template-columns: 15rem 1fr;
-    grid-row: 1fr 1fr;
+    grid-template-rows: 10rem 1fr;
+    grid-row: auto 1fr;
+    height: 100vh;
 }
 
 .heading {

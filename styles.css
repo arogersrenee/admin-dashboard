@@ -62,7 +62,7 @@ table {
     --clr-clearblue: #eff6ff;
     --clr-profileyellow: #facc15;
     --clr-card: #f0b429;
-    --clor-body: #334155;
+    --clr-body: #334155;
 }
 
 /* || Dashboard */
@@ -240,7 +240,7 @@ h2 {
 .project-cards {
     display: grid;
     gap: 1.5rem;
-    grid-template-columns: repeat(auto-fill, minmax(16.25rem, 1fr ));
+    grid-template-columns: repeat(auto-fill, minmax(16.25rem, 1fr ));    
 }
 
 .card-project {
@@ -248,7 +248,7 @@ h2 {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    gap: 1em;
+    gap: 2em;
 }
 
 .card-heading{
@@ -257,14 +257,14 @@ h2 {
 }
 
 .card-project-body {
-    color: var(--clor-body);
+    color: var(--clr-body);
     font-size: 0.8rem;
     line-height: 1.25rem;
     /* add ellipsis for overflow text */
     text-overflow:ellipsis;
     overflow: hidden;
     display: -webkit-box;
-    -webkit-line-clamp: 3;
+    -webkit-line-clamp: 4;
     -webkit-box-orient: vertical;
 }
 
@@ -291,7 +291,7 @@ h2 {
 }
 
 .announcement-group:not(:last-child)  {
-    border-bottom: 1px solid var(--clor-body);
+    border-bottom: 1px solid var(--clr-body);
     padding-bottom: 1rem;
 }
 
@@ -302,12 +302,41 @@ h2 {
 }
 
 .announcement-body {
-    color: var(--clor-body);
+    color: var(--clr-body);
 }
 
 .side-cards {
     display: flex;
     flex-direction: column;
-    gap: 3rem;
+    gap: 2rem;
     /* justify-content: space-between; */
+}
+
+/* || TRENDING */
+
+section img {
+    width: 40px;
+    height: 40px;
+    background-color: var(--clr-profileyellow);
+    border-radius: 50%;
+}
+
+.card-trending {
+    display: grid;
+    gap: 1.25rem;
+}
+
+.trending {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    font-size: 0.8rem;
+}
+
+.handle {
+    margin-bottom: 0.25rem;
+}
+
+.handle + p {
+    color: var(--clr-body);
 }
